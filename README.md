@@ -19,8 +19,8 @@ self.token(callback);
 self.token(token, callback);
 
 // called for any un-matched tokens
-self.tokens = function(token, callback){ callback(true||false); };
+self.tokens = function(token, from, callback){ callback(true||false); };
 
-// use a token, fires callback(err)
+// use a token, fires callback(err, to)
 self.dispense(token, callback);
 ```
